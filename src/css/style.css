@@ -7,9 +7,11 @@
   
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(33, 90%, 65%);
-  --second-color: hsl(355, 90%, 55%);
-  --third-color: hsl(198, 90%, 65%);
+  --first-color: #99a295;
+  --second-color: #f61b1b;
+  --third-color: #00aadd;
+  --fuorth-color: #eccd2a;
+  --fifth-color: #e332e2;
   --title-color: hsl(0, 0%, 12%);
   --text-color: hsl(0, 0%, 56%);
   --black-color: hsl(0, 0%, 4%);
@@ -121,8 +123,125 @@ img {
 
 
 /*=============== HOME ===============*/
+.home__container,
+.home__data,
+.home__article,
+.home__images,
+.home__footer {
+  display: grid;
+}
 
+.home__container {
+  padding-block: 7.5rem 2.5rem;
+  row-gap: 1.5rem
+}
 
+.home__data {
+  text-align: center;
+  row-gap: 1.5rem;
+}
+
+.home__data {
+  text-align: center;
+}
+
+.home__subtitle {
+  font-size: var(--small-font-size)
+}
+
+.home__titles {
+  margin-block: .5rem 2rem;
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+}
+
+.home__button,
+.home__social,
+.home__controls,
+.home__navigation {
+  display: flex;
+}
+
+.home__button {
+  justify-self: center;
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.home__button i{
+ 
+  font-size: .1.25rem;
+  transition: transform .4s;
+}
+
+.home__button:hover i {
+  transform: translate(.5rem);
+}
+
+.home__article {
+  width: 270px;
+  place-items: center;
+  padding-block: 1rem;
+}
+
+.home__card {
+  position: relative;
+}
+
+.home__circle {
+  width: 270px;
+  height: 270px;
+  border-radius: 50%;
+}
+
+.home__circle-1 {
+  background-color: var(--first-color);
+}
+
+.home__circle-2 {
+  background-color: var(--second-color);
+}
+
+.home__circle-3 {
+  background-color: var(--third-color);
+}
+
+.home__circle-4 {
+  background-color: var(--fuorth-color);
+}
+
+.home__circle-5 {
+  background-color: var(--fifth-color);
+}
+
+.home__img-1 {
+  position: absolute;
+  width: 200px;
+  filter: drop-shadow(0 20px 12px hsla(0, 0%, 0%, .4));
+}
+
+.home__img-1 {
+  bottom: 5rem;
+  left: 1.5rem;
+}
+
+.home__footer {
+  row-gap: 3rem;
+}
+
+.home__social {
+  justify-content: center;
+  column-gap: .5rem;
+}
+
+.home__social-link {
+  color: var(--title-color);
+  font-size: 1.5rem;
+}
 /* Swiper class */
 
 

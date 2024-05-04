@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="/src/css/swiper-bundle.min.css">
       <link rel="stylesheet" href="/src/css/style.css">
       <title>bike shop</title>
    </head> 
@@ -13,7 +13,7 @@
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
          <nav class="nav container">
-            <a href="#" class="nav__logo">Sneakers</a>
+            <a href="#" class="nav__logo">Bike Shop</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
@@ -68,44 +68,111 @@
                 <div class="home__data">
                     <h3 class="home__subtitle">NEW IN</h3>
 
-                    <div class="home__titles">
-                        <div>
-                            <div>
+                    <div thumbsSlider="" class="home__titles swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
                                 <h1 class="home__title">
-                                    
+                                   Yeezy Boost<br> 350 V2 Clay 
                                 </h1>
                             </div>
 
-                            <div>
+                            <div class="swiper-slide">
                                 <h1 class="home__title">
-                                    
+                                    Hyperdunk X <br> TB Urban Red
                                 </h1>
                             </div>
 
-                            <div>
+                            <div class="swiper-slide">
                                 <h1 class="home__title">
-                                    
+                                    Air Mag <br> 3000 X1 Future
                                 </h1>
                             </div>
                         </div>
                     </div>
+
+                    <a href="#" class="home__button">
+                        Buy Now <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
 
                 <div class="home__images">
-                    
+                    <div class="home__swiper swiper"></div>
+                    <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                            <div class="home__card">
+                                <div class="home__circle home home__circle-1"></div>
+                                <img src="/src/assets/bike-gray.png" alt="" class="home__img-1">
+                            </div>
+                        </article>
+
+                        <article class="home__articl swiper-slidee">
+                            <div class="home__card">
+                                <div class="home__circle home home__circle-2"></div>
+                                <img src="/src/assets/bike-red.png" alt="" class="home__img-1">
+                            </div>
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                            <div class="home__card">
+                                <div class="home__circle home home__circle-3"></div>
+                                <img src="/src/assets/bike-blue.png" alt="" class="home__img-1">
+                            </div>
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                            <div class="home__card">
+                                <div class="home__circle home home__circle-4"></div>
+                                <img src="/src/assets/bike-yellow.png" alt="" class="home__img-1">
+                            </div>
+                        </article>
+
+                        <article class="home__article swiper-slide">
+                            <div class="home__card">
+                                <div class="home__circle home home__circle-5"></div>
+                                <img src="/src/assets/bike-pink.png" alt="" class="home__img-1">
+                            </div>
+                        </article>
+                    </div>
                 </div>
 
                 <footer class="home__footer">
+                    <div class="home__controls">
+                        <div class="swiper-pagination"> </div>
 
+                        <div class="home__navegation">
+                            <div class="swiper-button-prev">
+                                <i class="fa-solid fa-chevron-left"></i>
+    
+                            </div>
+
+                            <div class="swiper-button-next">
+                                <i class="fa-solid fa-chevron-right"></i> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="#"  target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="#"  target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#"  target="_blank" class="home__social-link">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
                 </footer>
             </div>
          </section>
       </main>    
 
       <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
+      <script src="/src/script/swiper-bundle.min.js"></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="/src/script/script.js"></script>
    </body>
 </html>

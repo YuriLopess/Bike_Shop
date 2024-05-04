@@ -1,10 +1,17 @@
-/*=============== SHOW MENU ===============*/
 
+/*=============== SWIPER ===============*/
+let swiperImages = new Swiper('.home__swiper', {
 
-/*=============== REMOVE MENU MOBILE ===============*/
+    loop: true,
 
+    pagination: {
+      el: '.swiper-pagination',
+    },
 
-/*=============== SWIPER SNEAKERS ===============*/
-
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
