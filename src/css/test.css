@@ -16,6 +16,7 @@
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 
 body {
@@ -107,6 +108,33 @@ h1.displaySlide {
     display: block;
 }
 
+.circle--slides div {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+}
+
+#circle-1 {
+    background-color: blue;
+}
+
+#circle-2 {
+    background-color: rgb(52, 52, 53);
+}
+
+#circle-3 {
+    background-color: rgb(224, 28, 126);
+}
+
+#circle-4 {
+    background-color: rgb(255, 0, 0);
+}
+
+#circle-5 {
+    background-color: rgb(255, 238, 0);
+}
+
+
 .home__button {
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
@@ -149,7 +177,7 @@ h1.displaySlide {
 .prev {
     left: 8%;
     transform: translateX(-0%);
-    background-color: black;
+    background-color: var(--black-color);
     color: var(--body-color);
 }
 
@@ -157,4 +185,143 @@ h1.displaySlide {
     right: 85%;
     transform: translateX(20%);
     background-color: rgb(255, 255, 255);
+}
+
+.popup {
+    position: absolute;
+    top: -150%;
+    left:50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: var(--black-color);
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius:10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+
+.popup.active {
+    top: 50%;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+.popup .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    color: var(--black-color);
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.popup .form h2 {
+    text-align: center;
+    color: white;
+    margin: 15px 0px 20px;
+    font-size: var(--h2-font-size);
+}
+
+.popup .form .form-element {
+    margin: 30px 0px; 
+}
+
+.popup .form .form-element label {
+    font-size: var(--normal-font-size) ;
+    color: white;
+}
+
+.popup .form .form-element input[type="text"],
+.popup .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.popup .form .form-element input[type="checkbox"] {
+    margin-right:5px ;
+}
+
+.popup .form .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: white;
+    font-family: var(--font-regular);
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.popup .form .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contacts-popup {
+    background-color: var(--black-color);
+}
+
+.contacts-popup .close-btn {
+    color: var(--black-color);
+}
+
+.contacts-popup .form h2 {
+    color: white;
+}
+
+.contacts-popup .form-element label {
+    color: white;
+}
+
+.contacts-popup .form-element input[type="text"],
+.contacts-popup .form-element input[type="password"],
+.contacts-popup .form-element textarea {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.contacts-popup .form-element button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    background: white;
+    font-family: var(--font-regular);
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.contacts-popup .form-element a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
 }

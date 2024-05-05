@@ -10,7 +10,7 @@ function initializeSlider(){
         slides[slideIndex].classList.add("displaySlide");
         textSlides[slideIndex].classList.add("displaySlide");
     }
-    startSlideShow(); // Inicia o slideshow automaticamente ao carregar a página
+    startSlideShow(); 
 }
 
 function showSlide(index){
@@ -45,15 +45,13 @@ function nextSlide(){
 }
 
 function startSlideShow() {
-    intervalId = setInterval(nextSlide, 2000); // Altera o slide a cada 2 segundos
+    intervalId = setInterval(nextSlide, 10000); 
 }
 
 function stopSlideShow() {
-    clearInterval(intervalId); // Para o autoplay
+    clearInterval(intervalId);
 }
 
-// Inicia o slideshow automaticamente ao passar o mouse sobre o slider
 document.querySelector(".slider").addEventListener("mouseenter", stopSlideShow);
 
-// Continua o slideshow automaticamente ao tirar o mouse do slider
 document.querySelector(".slider").addEventListener("mouseleave", startSlideShow);
