@@ -138,11 +138,6 @@ img {
 
 .home__data {
   text-align: center;
-  row-gap: 1.5rem;
-}
-
-.home__data {
-  text-align: center;
 }
 
 .home__subtitle {
@@ -173,13 +168,12 @@ img {
 }
 
 .home__button i{
- 
   font-size: .1.25rem;
   transition: transform .4s;
 }
 
 .home__button:hover i {
-  transform: translate(.5rem);
+  transform: translateX(.5rem);
 }
 
 .home__article {
@@ -210,21 +204,10 @@ img {
   background-color: var(--third-color);
 }
 
-.home__circle-4 {
-  background-color: var(--fuorth-color);
-}
-
-.home__circle-5 {
-  background-color: var(--fifth-color);
-}
-
 .home__img-1 {
   position: absolute;
   width: 200px;
   filter: drop-shadow(0 20px 12px hsla(0, 0%, 0%, .4));
-}
-
-.home__img-1 {
   bottom: 5rem;
   left: 1.5rem;
 }
@@ -243,7 +226,9 @@ img {
   font-size: 1.5rem;
 }
 /* Swiper class */
-
+.swiper{
+  margin-inline: initial;
+}
 
 /* Swiper animation */
 
