@@ -5,27 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="./src/css/test.css">
-    <title>bike shop</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Velocity Ventures</title>
 </head> 
 <body>
     <header>
         <div class="container">
             <div class="flex">
-                <a href="#" id="header-brand">Bike Shop</a>
+                <a href="#" id="header-brand">Velocity Ventures</a>
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li id="show-contacts"><a href="#">Contacts</a></li>
-                        <li><a href="#">Quiz</a></li>
-                        <li id="show-login"><a href="#" >Login</a></li>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/src/pages/about.html">About us</a></li>
+                        <li><a href="/src/pages/quiz.html">Quiz</a></li>
                     </ul>
                 </nav>
 
                 <div class="header-icon">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" id="show-contacts"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#" id="show-login"><i class="fa-solid fa-user"></i></a>
                 </div>
             </div>
         </div>
@@ -36,27 +34,18 @@
             <div class="text--slides">
                 <h3 class="home__subtitle">NEW IN</h3>
                 <h1>Full Carbon <br> XT 12 Blue</h1>
-                <h1>Full Carbon <br> XT 12 Gray</h1>
-                <h1>Full Carbon <br> XT 12 Pink</h1>
-                <h1>Full Carbon <br> XT 12 Red</h1>
-                <h1>Full Carbon <br> XT 12 Yellow</h1>
+                <h1>Full Carbon <br> XT 12 Orange</h1>
+                <h1>TWS E-quest <br> Vs White</h1>
+                <h1>Naville Kroos<br> Red</h1>
                 <a href="#" class="home__button">
                     Buy Now <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
-            <div class="circle--slides">
-                <div id="circle-1"></div>
-                <div id="circle-2"></div>
-                <div id="circle-3"></div>
-                <div id="circle-4"></div>
-                <div id="circle-5"></div>
-            </div>
             <div class="img--slides">
                 <img class="slide" src="./src/assets/bike-blue.png" alt="">
-                <img class="slide" src="./src/assets/bike-gray.png" alt="">
-                <img class="slide" src="./src/assets/bike-pink.png" alt="">
+                <img class="slide" src="./src/assets/bike-orange.png" alt="">
+                <img class="slide" src="./src/assets/bike-white.png" alt="">
                 <img class="slide" src="./src/assets/bike-red.png" alt="">
-                <img class="slide" src="./src/assets/bike-yellow.png" alt="">
             </div>
             <button class="prev" onclick="prevSlide()"><i class="fa-solid fa-arrow-left"></i></button>
             <button class="next" onclick="nextSlide()"><i class="fa-solid fa-arrow-right"></i></button>
@@ -109,7 +98,7 @@
             </div>
         </div>
     </div>
-
+    
     <script src="./src/script/slideShow.js"></script>
     <script src="./src/script/popup.js"></script>
 </body>
