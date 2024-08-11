@@ -1,12 +1,12 @@
-## Velocity Ventures - Minimalist Bike Website
+<h1 align="center">Velocity Ventures - Minimalist Bike Website</h1>
 
-![Full Carbon XT 12 Blue](https://github.com/user-attachments/assets/1b7da5e7-10e1-46b8-bd1d-05cb94ed9932)
+![Full Carbon XT 12 Blue (1)](https://github.com/user-attachments/assets/66130456-c902-4538-8ed4-621f4805dcd2)
 
-**Description:**
+<h2>Description:</h2>
 
 This project, developed for the Front-End I course at Fiap, simulates a bicycle store website with a minimalist and clean design. Currently, the website does not have a responsive layout, therefore, for a better experience, it is recommended to view it on screens with a resolution of approximately 1300px wide.
 
-**Technologies Used:**
+<h2>Technologies Used:</h2>
 
 * **HTML:** Base language for structuring the page content.
 * **CSS:** Visual styling of the website, including layout, colors, typography, and other visual elements.
@@ -14,7 +14,7 @@ This project, developed for the Front-End I course at Fiap, simulates a bicycle 
 * **Font Awesome:** Library of icons and vector symbols that enrich the website's design.
 
 
-## Installation
+<h2>Installation:</h2>
 
 To install the project, you can download it as a .zip file or clone it directly from GitHub.
 
@@ -33,6 +33,6 @@ To install the project, you can download it as a .zip file or clone it directly 
    git clone https://github.com/YuriLopess/Bike_Shop.git
 
 
-**Contact:**
+<h2>Contact:</h2>
 
 **[costalopesyuri@gmail.com](mailto:costalopesyuri@gmail.com)**

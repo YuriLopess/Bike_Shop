@@ -1,0 +1,24 @@
+# Ignore VS Code Configuration Files
+.vscode/
+
+# Ignore Temporary System Files
+*.log
+*.tmp
+
+# Ignore Build Directories and Dependencies
+node_modules/
+dist/
+build/
+
+# Ignore Browser Cache Files
+*.cache
+*.min.css
+*.min.js
+
+# Ignore System-Specific Configuration Files
+.DS_Store
+Thumbs.db
+
+# Ignore Package Manager Lock Files
+package-lock.json
+yarn.lock
